@@ -1,0 +1,75 @@
+.stories {
+  &__title {
+    margin-bottom: 25px;
+    font-family: $secondary-font;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__question {
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 1.43;
+    text-align: center;
+    color: $paragraph-color;
+  }
+
+  &__name {
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 1.36;
+    color: $secondary-color;
+  }
+
+  &__date {
+    font-size: 13px;
+    line-height: 1.38;
+    color: $secondary-color;
+  }
+
+  &__avatar {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 8px;
+  }
+
+  &__descr {
+font-family: $secondary-font;
+font-size: 18px;
+line-height: 1.56;
+color: $third-color;
+  }
+}
+
+.stories__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.stories__thumb {
+  position: relative;
+}
+.stories__overlay {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+}
+.stories__text-box {
+  padding: 23px 0 26px 10px;
+  margin-bottom: 30px;
+}
+
+.stories__paragraph {
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+  color: $primary-color;
+}
+.stories__link {
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+  color:$accent-color;
+}

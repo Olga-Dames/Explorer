@@ -1,0 +1,114 @@
+.blog {
+  padding-top: 0;
+  background-color: rgb(206, 199, 166);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(../../images/bg@2x.jpg);
+      }
+  &__container{
+    width: 800px;
+    padding-top: 225px;
+  }
+  &__upper-part {
+    padding: 160px 60px 40px 60px ;
+    background-color: rgb(206, 199, 166);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--first {
+      
+        background-image: url(../../images/blog-1.jpg);
+
+      
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../../images/blog-1@2x.jpg);
+        }
+    }
+    &--second {
+        background-image: url(../../images/blog-2.jpg);
+      
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../../images/blog-2@2x.jpg);
+        }
+    }
+    &--third {
+        background-image: url(../../images/blog-3.jpg);
+      
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../../images/blog-3@2x.jpg);
+        }
+    }
+  }
+
+  &__lower-part {
+    padding: 35px 60px;
+    background-color: $light-bg;
+  }
+
+&__article {
+  position: relative;
+}
+}
+
+.blog__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.blog__avatar {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.blog__name {
+  font-family: $secondary-font;
+  line-height: 1.06;
+  color: $secondary-color;
+}
+
+.blog__date {
+  font-size: 13px;
+  line-height: 1.46;
+  color: $secondary-color;
+}
+
+.blog__title {
+  max-width: 500px;
+  font-family: $secondary-font;
+  font-size: 28px;
+  line-height: 1.25;
+  color: $secondary-color;
+}
+.blog__text {
+  height: 80px;
+  overflow: hidden;
+  line-height: 1.39;
+}
+
+.blog__category {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0 10px;
+  background-color: $decor-bg;
+  border-radius: 30px;
+  font-family: $secondary-font;
+  font-size: 8px;
+  line-height: 3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

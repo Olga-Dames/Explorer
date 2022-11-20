@@ -1,0 +1,33 @@
+.footer {
+  background-color: $footer-bg;
+
+  &__container {
+    padding: 55px 0 45px 0;
+    text-align: center;
+  }
+}
+.footer__text {
+  font-size: 14px;
+  line-height: 2;
+  color: $footer-text-color;
+}
+.footer__wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.footer__license {
+  font-size: 13px;
+  line-height: 2.15;
+}
+.footer__link {
+  font-size: 13px;
+  line-height: 2.15;
+  color: $accent-color;
+
+  &--bigger {
+  font-size: 14px;
+  line-height: 2;
+  }
+}

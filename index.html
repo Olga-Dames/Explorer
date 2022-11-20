@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Explorer</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo link" href="#" aria-label="Explorer-blog"
+          ><img src="./images/logo.svg" alt="logo" width="176" height="40"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Categories</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Pick category</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section blog">
+        <div class="container blog__container">
+          <h1 class="visually-hidden">Explorer travel blog</h1>
+          <article class="blog__article">
+            <div class="blog__upper-part blog__upper-part--first">
+              <div class="blog__wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/avatar1.webp    1x,
+                      ./images/avatar1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/avatar1.jpg 1x, ./images/avatar1@2x.jpg 2x"
+                  />
+                  <img
+                    class="blog__avatar"
+                    src="./images/avatar1.jpg"
+                    alt="Luke Cage"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+                <div class="blog__text-wrapper">
+                  <p class="blog__name">Luke Cage</p>
+                  <time class="blog__date" datetime="2016-10-11"
+                    >October 11, 2016</time
+                  >
+                </div>
+              </div>
+              <h2 class="blog__title">
+                The 10 most beautiful places you should visit in your life
+              </h2>
+            </div>
+            <div class="blog__lower-part">
+              <p class="blog__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                ratione facere sit dolorum, numquam, eos corrupti deserunt
+                blanditiis veniam sequi molestias ipsa inventore perspiciatis
+                consectetur, ullam cumque doloremque. Pariatur asperiores hic
+                ipsam dignissimos iusto dolorem! Perspiciatis provident animi
+                distinctio natus labore totam excepturi nemo quaerat eligendi!
+                Libero repellendus hic veritatis obcaecati illum amet atque
+                eveniet eius unde, incidunt possimus architecto totam dolorem
+                rem? Amet repellendus iste saepe autem expedita necessitatibus
+                architecto consectetur quia at, id laborum commodi corrupti
+                dolor iure. Porro quaerat, quisquam sint sed officia ducimus
+                atque aspernatur? Facilis, quibusdam quia? Repudiandae vel aut,
+                nemo delectus dignissimos cupiditate laudantium!
+              </p>
+              <button class="btn" onclick="showText(this)">
+                Continue Reading →
+              </button>
+            </div>
+            <p class="blog__category">Travel</p>
+          </article>
+          <article class="blog__article">
+            <div class="blog__upper-part blog__upper-part--second">
+              <div class="blog__wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/avatar2.webp    1x,
+                      ./images/avatar2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/avatar2.jpg 1x, ./images/avatar2@2x.jpg 2x"
+                  />
+                  <img
+                    class="blog__avatar"
+                    src="./images/avatar2.jpg"
+                    alt="Jessica Simpson"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+                <div class="blog__text-wrapper">
+                  <p class="blog__name">Jessica Simpson</p>
+                  <time class="blog__date" datetime="2016-06-12"
+                    >June 12, 2016</time
+                  >
+                </div>
+              </div>
+              <h2 class="blog__title">
+                Perfect gear to take with you if you go on a photography trip
+              </h2>
+            </div>
+            <div class="blog__lower-part">
+              <p class="blog__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                ratione facere sit dolorum, numquam, eos corrupti deserunt
+                blanditiis veniam sequi molestias ipsa inventore perspiciatis
+                consectetur, ullam cumque doloremque. Pariatur asperiores hic
+                ipsam dignissimos iusto dolorem! Perspiciatis provident animi
+                distinctio natus labore totam excepturi nemo quaerat eligendi!
+                Libero repellendus hic veritatis obcaecati illum amet atque
+                eveniet eius unde, incidunt possimus architecto totam dolorem
+                rem? Amet repellendus iste saepe autem expedita necessitatibus
+                architecto consectetur quia at, id laborum commodi corrupti
+                dolor iure. Porro quaerat, quisquam sint sed officia ducimus
+                atque aspernatur? Facilis, quibusdam quia? Repudiandae vel aut,
+                nemo delectus dignissimos cupiditate laudantium!
+              </p>
+              <button class="btn" onclick="showText(this)">
+                Continue Reading →
+              </button>
+            </div>
+            <p class="blog__category">Photography</p>
+          </article>
+          <article class="blog__article">
+            <div class="blog__upper-part blog__upper-part--third">
+              <div class="blog__wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/avatar1.webp    1x,
+                      ./images/avatar1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/avatar1.jpg 1x, ./images/avatar1@2x.jpg 2x"
+                  />
+                  <img
+                    class="blog__avatar"
+                    src="./images/avatar1.jpg"
+                    alt="Luke Cage"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+                <div class="blog__text-wrapper">
+                  <p class="blog__name">Luke Cage</p>
+                  <time class="blog__date" datetime="2016-06-12"
+                    >June 12, 2016</time
+                  >
+                </div>
+              </div>
+              <h2 class="blog__title">
+                We are looking for another photographer to join our group
+              </h2>
+            </div>
+            <div class="blog__lower-part">
+              <p class="blog__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                ratione facere sit dolorum, numquam, eos corrupti deserunt
+                blanditiis veniam sequi molestias ipsa inventore perspiciatis
+                consectetur, ullam cumque doloremque. Pariatur asperiores hic
+                ipsam dignissimos iusto dolorem! Perspiciatis provident animi
+                distinctio natus labore totam excepturi nemo quaerat eligendi!
+                Libero repellendus hic veritatis obcaecati illum amet atque
+                eveniet eius unde, incidunt possimus architecto totam dolorem
+                rem? Amet repellendus iste saepe autem expedita necessitatibus
+                architecto consectetur quia at, id laborum commodi corrupti
+                dolor iure. Porro quaerat, quisquam sint sed officia ducimus
+                atque aspernatur? Facilis, quibusdam quia? Repudiandae vel aut,
+                nemo delectus dignissimos cupiditate laudantium!
+              </p>
+              <button class="btn" onclick="showText(this)">
+                Continue Reading →
+              </button>
+            </div>
+            <p class="blog__category">Photography</p>
+          </article>
+          <div class="additional">
+            <h2 class="additional__title">Want to read more?</h2>
+            <a class="additional__link link" href="#">Visit Blog Archive</a>
+          </div>
+        </div>
+      </section>
+      <section class="section stories">
+        <div class="container">
+          <h2 class="stories__title">Featured Stories</h2>
+          <p class="stories__question">Did you read our personal favorites?</p>
+          <ul class="stories__list list">
+            <li class="stories__item">
+              <div class="stories__thumb">
+                <picture>
+                  <source
+                    srcset="./images/story1.webp 1x, ./images/story1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/story1.jpg 1x, ./images/story1@2x.jpg 2x"
+                  />
+                  <img
+                    class="stories__img"
+                    src="./images/story1.jpg"
+                    alt="man standing on mountain top"
+                  />
+                </picture>
+                <div class="stories__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/smallavatar1.webp    1x,
+                        ./images/smallavatar1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smallavatar1.jpg    1x,
+                        ./images/smallavatar1@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="stories__avatar"
+                      src="./images/smallavatar1.jpg"
+                      alt="Luke Cage"
+                      width="35"
+                      height="35"
+                    />
+                  </picture>
+                  <div>
+                    <p class="stories__name">Luke Cage</p>
+                    <time class="stories__date" datetime="2016-10-11"
+                      >Oct 11, 2016</time
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="stories__text-box">
+                <p class="stories__descr">
+                  The 10 most beautiful places you should visit in your life
+                </p>
+              </div>
+            </li>
+            <li class="stories__item">
+              <div class="stories__thumb">
+                <picture>
+                  <source
+                    srcset="./images/story2.webp 1x, ./images/story2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/story2.jpg 1x, ./images/story2@2x.jpg 2x"
+                  />
+                  <img
+                    class="stories__img"
+                    src="./images/story2.jpg"
+                    alt="man standing near the ocean"
+                  />
+                </picture>
+                <div class="stories__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/smallavatar2.webp    1x,
+                        ./images/smallavatar2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/smallavatar2.jpg    1x,
+                        ./images/smallavatar2@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="stories__avatar"
+                      src="./images/smallavatar2.jpg"
+                      alt="Jessica Simpson"
+                      width="35"
+                      height="35"
+                    />
+                  </picture>
+                  <div>
+                    <p class="stories__name">Jessica Simpson</p>
+                    <time class="stories__date" datetime="2016-06-12"
+                      >Jun 12, 2016</time
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="stories__text-box">
+                <p class="stories__descr">
+                  We found the most beautiful place for our party november
+                </p>
+              </div>
+            </li>
+            <li class="stories__item">
+              <div class="stories__thumb">
+                <picture>
+                  <source
+                    srcset="./images/story3.webp 1x, ./images/story3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/story3.jpg 1x, ./images/story3@2x.jpg 2x"
+                  />
+                  <img
+                    class="stories__img"
+                    src="./images/story3.jpg"
+                    alt="man standing on mountain top"
+                  />
+                </picture>
+                <div class="stories__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/avatar1.webp    1x,
+                        ./images/avatar1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/avatar1.jpg    1x,
+                        ./images/avatar1@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="stories__avatar"
+                      src="./images/avatar1.jpg"
+                      alt="Luke Cage"
+                      width="35"
+                      height="35"
+                    />
+                  </picture>
+                  <div>
+                    <p class="stories__name">Luke Cage</p>
+                    <time class="stories__date" datetime="2016-06-12"
+                      >Jun 12, 2016</time
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="stories__text-box">
+                <p class="stories__descr">
+                  Why New York is still our favorite city to visit
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p class="stories__paragraph">
+            Want to read all of our stories?<a class="stories__link" href="#"
+              >Read the full blog</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text">
+          Copyright &copy;
+          <span class="footer__license"></span>
+            - Images used for demonstration purpose only (</span
+          ><a class="footer__link" href="" noopener nofollow noreferrer>
+            Licenses</a
+          >)
+        </p>
+        <div class="footer__wrapper">
+          <p class="footer__text">
+            Copyright &copy;<a
+              class="footer__link footer__link--bigger"
+              href=""
+              noopener
+              nofollow
+              noreferrer
+            >
+              Studio Corvus</a
+            >
+          </p>
+          <p class="footer__text">
+            Powered by
+            <a class="footer__link" href="#" noopener nofollow noreferrer>
+              Webflow</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/showText.js"></script>
+  </body>
+</html>
